@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON;
+
+CREATE OR REPLACE TRIGGER EmpSalaryInsert_trigg
+AFTER INSERT ON employee_salary
+begin
+      salary_management_output.put_line('Salary Assigned To the Employee');
+end;
+/
