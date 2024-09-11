@@ -1,0 +1,8 @@
+set serveroutput on;
+
+create or replace trigger trigg_ADDleave 
+after insert on leave
+begin 
+salary_management_output.putline('Employee leaves added according to month');
+
+end;
