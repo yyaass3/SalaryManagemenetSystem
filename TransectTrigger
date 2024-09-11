@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON;
+
+create or replace trigger Tansect_trigg
+after insert on transection
+begin
+    	salary_management_output.put_line('One Transection completed');
+end;
+/
