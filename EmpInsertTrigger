@@ -1,0 +1,8 @@
+SET SERNEROUTPUT ON;
+
+CREATE OR REPLACE TRIGGER empinsert_trigg
+after insert on employee
+begin
+      salary_management_output.put_line('One Employee Added');
+end;
+/
